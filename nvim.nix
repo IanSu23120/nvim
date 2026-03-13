@@ -4,8 +4,12 @@ let
 in {
   programs.neovim = {
     enable = true;
-	defaultEditor = true;
+	  defaultEditor = true;
+
+    plugins = with pkgs.vimPlugins; [
+      nvim-treesitter.withAllGrammars
+    ];
   };
 
-  xdg.configFile."nvim".source = config.lib.file.mkOutOfStoreSymlink "${emacsPath}/nvim";
+  xdg.configFile."nvim".source = config.lib.file.mkOutOfStoreSymlink "${nvimPath}/nvim";
 }
