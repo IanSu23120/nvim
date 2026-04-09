@@ -1,0 +1,52 @@
+{
+  "plugins": {
+    "fzf-lua": {
+      "rev": "4deeecf611c0beba6455e6cf06e2c051a6169dd4",
+      "src": "https://github.com/ibhagwan/fzf-lua"
+    },
+    "mini.ai": {
+      "rev": "43eb2074843950a3a25aae56a5f41362ec043bfa",
+      "src": "https://github.com/nvim-mini/mini.ai"
+    },
+    "mini.cursorword": {
+      "rev": "a7e606208197ca5d1c5288750d5163429b4c74da",
+      "src": "https://github.com/nvim-mini/mini.cursorword"
+    },
+    "mini.hipatterns": {
+      "rev": "a3ffba45e4119917b254c372df82e79f7d8c4aad",
+      "src": "https://github.com/nvim-mini/mini.hipatterns"
+    },
+    "mini.icons": {
+      "rev": "7fdae2443a0e2910015ca39ad74b50524ee682d3",
+      "src": "https://github.com/nvim-mini/mini.icons"
+    },
+    "mini.move": {
+      "rev": "74d140143b1bb905c3d0aebcfc2f216fd237080e",
+      "src": "https://github.com/nvim-mini/mini.move"
+    },
+    "mini.statusline": {
+      "rev": "b456bfe845e475e9cec065b7a9a1ef657ad2f41b",
+      "src": "https://github.com/nvim-mini/mini.statusline"
+    },
+    "mini.surround": {
+      "rev": "2715e04bea3ec9244f15b421dc5b18c0fe326210",
+      "src": "https://github.com/nvim-mini/mini.surround"
+    },
+    "mini.tabline": {
+      "rev": "169af955ad2ed0ffcc3d2c83e850bcc7eaac2f0e",
+      "src": "https://github.com/nvim-mini/mini.tabline"
+    },
+    "mini.trailspace": {
+      "rev": "b362246495d18c29b4545a8f1c47f627f8011b7c",
+      "src": "https://github.com/nvim-mini/mini.trailspace"
+    },
+    "zpack.nvim": {
+      "rev": "7ea1529ba20e0b9a8a1f4f976926a1500d542f4e",
+      "src": "https://github.com/zuqini/zpack.nvim"
+    },
+    "zshow.nvim": {
+      "rev": "993b3ae73dc36e22055c115b925cad37d33df0e1",
+      "src": "https://github.com/sairyy/zshow.nvim"
+    }
+  }
+}

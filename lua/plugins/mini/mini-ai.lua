@@ -5,4 +5,3 @@ return {
     require("mini.ai").setup()
   end,
 }
-

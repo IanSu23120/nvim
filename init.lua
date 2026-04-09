@@ -1,2 +1,6 @@
 require("config")
-require("manager")
+vim.pack.add({ 'https://github.com/zuqini/zpack.nvim' })
+require("zpack").setup({
+    {import = "plugins" },
+    {import = "plugins.mini"}
+})
