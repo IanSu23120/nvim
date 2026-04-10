@@ -1,5 +1,5 @@
 return {
-	"nvim-mini/mini.hipatterns",
+	"nvim-mini/mini.indentscope",
 	event = "VeryLazy",
 	opts = {},
 }

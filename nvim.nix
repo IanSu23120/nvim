@@ -22,8 +22,6 @@ in {
 
       prettier
     ];
-    withPython3 = false;
-    neovim.withRuby = false;
   };
 
   xdg.configFile."nvim".source = config.lib.file.mkOutOfStoreSymlink "${nvimPath}/nvim";
