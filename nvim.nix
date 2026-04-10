@@ -1,16 +1,17 @@
-{pkgs, config, ...}:
+{ pkgs, config, ... }:
 let
   nvimPath = "${config.home.homeDirectory}/zixos";
-in {
+in
+{
   programs.neovim = {
     enable = true;
-	  defaultEditor = true;
-		extraName = "nim";
+    defaultEditor = true;
+    extraName = "nim";
 
     plugins = with pkgs.vimPlugins; [
       nvim-treesitter.withAllGrammars
     ];
-    extraPackages = with pkgs;[
+    extraPackages = with pkgs; [
       fzf
       ripgrep
 
@@ -22,6 +23,8 @@ in {
 
       prettier
     ];
+    withPython3 = false;
+    withRuby = false;
   };
 
   xdg.configFile."nvim".source = config.lib.file.mkOutOfStoreSymlink "${nvimPath}/nvim";
