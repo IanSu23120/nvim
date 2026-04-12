@@ -1,5 +1,5 @@
 return {
 	"nvim-mini/mini.tabline",
-	event = "BufReadPre",
+	event = "VeryLazy",
 	opts = {},
 }
