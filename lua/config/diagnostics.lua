@@ -1,5 +1,7 @@
 local sev = vim.diagnostic.severity
 vim.diagnostic.config({
+	virtual_lines = false,
+	virtual_text = true,
 	severity_sort = true,
 	update_in_insert = false,
 	float = {
