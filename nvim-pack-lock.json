@@ -77,6 +77,10 @@
       "rev": "6ba834dc159f4c9c3b8e7b09f8c36c1a63c0e9a9",
       "src": "https://github.com/Loukis-13/paint.nvim"
     },
+    "roslyn.nvim": {
+      "rev": "f2ec6ee6384c3b611ddc817b9e78b20cd0334bbb",
+      "src": "https://github.com/seblyng/roslyn.nvim"
+    },
     "rustaceanvim": {
       "rev": "7b8dd7abb9a7f442b356aa03714aefce09610339",
       "src": "https://github.com/mrcjkb/rustaceanvim",

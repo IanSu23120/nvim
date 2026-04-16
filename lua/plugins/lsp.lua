@@ -19,4 +19,12 @@ return {
 		-- No need for lazy.nvim to lazy-load it.
 		lazy = false,
 	},
+	{
+		"seblyng/roslyn.nvim",
+		---@module 'roslyn.config'
+		---@type RoslynNvimConfig
+		opts = {
+			-- your configuration comes here; leave empty for default settings
+		},
+	},
 }
