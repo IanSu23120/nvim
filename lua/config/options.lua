@@ -19,7 +19,8 @@ opt.swapfile = false -- 建立 swap 檔
 opt.backup = false -- 建立 backup 檔
 opt.undofile = true -- 存檔後仍然可以undo
 
-opt.clipboard = "unnamedplus"
+-- opt.clipboard = "unnamedplus"
+vim.g.clipboard = "osc52"
 opt.termguicolors = true -- 突出色彩表現
 
 opt.scrolloff = 999 -- 設置螢幕捲動時上下保留999 但沒那麼多 所以達成 畫面置中效果
