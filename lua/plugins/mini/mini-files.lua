@@ -8,5 +8,6 @@ return {
         require("mini.files").open()
       end
     }
-  }
+  },
+  opts = {},
 }
