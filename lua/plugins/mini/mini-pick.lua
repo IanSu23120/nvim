@@ -4,6 +4,13 @@ return {
     dependencies = { "nvim-mini/mini.icons" },
     keys = {
       {
+        "<leader>fb",
+        function()
+          require("mini.pick").builtin.buffers()
+        end,
+        desc = "[F]ind [b]uffer"
+      },
+      {
         "<leader>ff",
         function()
           require("mini.pick").builtin.files()
@@ -16,13 +23,6 @@ return {
           require("mini.pick").builtin.grep_live()
         end,
         desc = "grep live"
-      },
-      {
-        "<leader>/?",
-        function()
-          require("mini.pick").builtin.grep()
-        end,
-        desc = "grep"
       },
       -- mark --
       {
@@ -83,19 +83,44 @@ return {
         desc = "type_definition"
       },
       {
-        "gs",
+        "<leader>cs",
+        function()
+          require("mini.extra").pickers.lsp({ scope = "document_symbol" })
+        end,
+        desc = "document symbol"
+      },
+      {
+        "<leader>cW",
+        function()
+          require("mini.extra").pickers.lsp({ scope = "workspace_symbol_live" })
+        end,
+        desc = "workspace_symbol_live"
+      },
+      {
+        "<leader>cw",
         function()
           require("mini.extra").pickers.lsp({ scope = "workspace_symbol" })
         end,
         desc = "workspace_symbol"
       },
       {
-        "gS",
+        "<leader>cd",
         function()
-          require("mini.extra").pickers.lsp({ scope = "workspace_symbol_live" })
+          require("mini.extra").pickers.diagnostic()
         end,
-        desc = "workspace_symbol_live"
+        desc = "diagnostics",
       },
+      {
+        "<leader>ca",
+        vim.lsp.buf.code_action,
+        desc = "code action",
+      },
+      {
+        "<leader>cr",
+        vim.lsp.buf.rename,
+        desc = "rename",
+      },
+      -- other
       {
         "<leader>ch",
         function()
